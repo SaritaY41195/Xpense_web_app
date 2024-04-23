@@ -23,7 +23,7 @@ class _NavBarState extends State<NavBar> {
   }
 
   ///=============== MOBILE ================///
-  mobileNav() {
+  Widget mobileNav() {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 20),
       height: 70,
@@ -38,7 +38,7 @@ class _NavBarState extends State<NavBar> {
   }
 
   ///=============== DESKTOP ================///
-  desktopNav() {
+  Widget desktopNav() {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       height: 70,
