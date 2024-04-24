@@ -15,9 +15,18 @@ class _Container5State extends State<Container5> {
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout.builder(
-      //mobile: ,
+      mobile: (BuildContext context) => mobileContainer5(),
       desktop: (BuildContext context) => desktopContainer5(),
     );
+  }
+
+  Widget mobileContainer5(){
+    return CommonContainerMobile(
+        'USE ANYTIME',
+        'Use anytime \nwhen you \nneed',
+        'Tellus lacus morbi sagittis lacus in. Amet nisl at mauris enim accumsan nisi, tincidunt vel. Enim ipsum, amet quis ullamcorper eget ut.',
+        illustration3,
+        false, context);
   }
 
   Widget desktopContainer5(){
