@@ -20,3 +20,4 @@
  const String vector= 'assets/images/vector.png';
 
  const String vector1= 'assets/images/vector1.png';
+ const String twitter= 'assets/images/twitter.png';
