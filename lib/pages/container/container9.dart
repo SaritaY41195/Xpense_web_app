@@ -60,6 +60,7 @@ class _Container9State extends State<Container9> {
                       Container(
                         child: Text(
                           '20M+ downloaded from 32\ndiffrent countires',
+                          textAlign: TextAlign.center,
                           style: TextStyle(
                               fontSize: MediaQuery.sizeOf(context).width / 25,
                               fontWeight: FontWeight.bold,
@@ -69,7 +70,7 @@ class _Container9State extends State<Container9> {
                       Container(
                         child: Text(
                           'Try demo for 7 days with full features.',
-                          style: TextStyle(color: Colors.white),
+                          style: TextStyle(color: Colors.white, fontSize: 25),
                         ),
                       ),
                       SizedBox(height: 30,),
@@ -94,24 +95,24 @@ class _Container9State extends State<Container9> {
                   ),
                 ),
                 Positioned(
-                  top: 300,
+                  top: 230,
                   left: 20,
                   bottom: 200,
                     child: CommonCardImage(illustration1)),
                 Positioned(
-                    top: 520,
+                    top: 430,
                     left: 220,
-                    bottom: 10,
+                    bottom: 50,
                     child: CommonCardImage(illustration2)),
                 Positioned(
-                    top: 300,
+                    top: 230,
                     right: 40,
                     bottom: 200,
                     child: CommonCardImage(illustration3)),
                 Positioned(
-                    top: 520,
+                    top: 430,
                     right: 220,
-                    bottom: 10,
+                    bottom: 50,
                     child: CommonCardImage(illustrator)),
               ],
             ),
@@ -124,9 +125,9 @@ class _Container9State extends State<Container9> {
 
   CommonCardImage(String image){
     return Container(
-      height: MediaQuery.sizeOf(context).height*0.1,
-      width: MediaQuery.sizeOf(context).width*0.2,
-      child: Card(
+      height: MediaQuery.sizeOf(context).height*0.03,
+      width: MediaQuery.sizeOf(context).width*0.18,
+      child: CircleAvatar(
         child: Container(
           decoration: BoxDecoration(
             image: DecorationImage(

@@ -1,8 +1,6 @@
 import 'package:expense_app/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-
-import '../../utils/button_style.dart';
 import '../../utils/constant.dart';
 
 class Container1 extends StatefulWidget {
@@ -24,7 +22,6 @@ class _Container1State extends State<Container1> {
 
   Widget mobileContainer1() {
     return Container(
-      // margin: EdgeInsets.symmetric(horizontal: MediaQuery.sizeOf(context).width / 10, vertical: 20),
       child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
